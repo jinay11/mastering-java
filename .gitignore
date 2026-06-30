@@ -1,0 +1,45 @@
+# ==========================
+# Java
+# ==========================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# ==========================
+# Build folders
+# ==========================
+
+bin/
+build/
+target/
+out/
+
+# ==========================
+# Eclipse
+# ==========================
+
+.project
+.classpath
+.settings/
+.metadata/
+
+# ==========================
+# IntelliJ IDEA
+# ==========================
+
+.idea/
+*.iml
+
+# ==========================
+# Environment files
+# ==========================
+
+.env
+.env.*
