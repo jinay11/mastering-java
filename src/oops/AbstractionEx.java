@@ -1,32 +1,34 @@
 package oops;
 
-abstract class TV {
+abstract class TV{
 	abstract void tvOn();
-
 	abstract void tvOff();
-
-	public void display() {
-		System.out.println("TV reach the reacharg limit ....");
+	
+	public void sport() {
+		System.out.println("You are watching sports channel");
 	}
-
+	
 }
 
-class TVRemote extends TV {
-	public void tvOn() {
-		System.out.println("TV is on");
+class TvRemote extends TV {
+	
+	@Override
+	void tvOn() {
+		System.out.println("TV is turned ON");
 	}
-
-	public void tvOff() {
-		System.out.println("TV is off");
+	
+	@Override
+	void tvOff() {
+		System.out.println("TV is turned OFF");
 	}
 }
 
 public class AbstractionEx {
 	public static void main(String[] args) {
-		TVRemote tv = new TVRemote();
-		tv.tvOff();
-		tv.tvOn();
-		tv.display();
+		TvRemote remote = new TvRemote();
+		remote.tvOn();
+		remote.sport();
+		remote.tvOff();
 	}
 }
 
