@@ -75,17 +75,23 @@ public class OperatorsPrc {
 //        System.out.println("x || y : " + (x || y));
 //        System.out.println("!x : " + (!x));
 
-        System.out.println("Ternary Operator");
-        int age = 1;
-        String result = (age >= 18) ? "Go to the party " : "you can't go to the party";
-        System.out.println(result);
+//        System.out.println("Ternary Operator");
+//        int age = 1;
+//        String result = (age >= 18) ? "Go to the party " : "you can't go to the party";
+//        System.out.println(result);
 
-        System.out.println("Bitwise Operator : ");
-        int a = 5;
-        int b = 7;
-        System.out.println("AND : " + (a & b));
-        System.out.println("OR : " + (a | b));
-        System.out.println("XOR : " + (a ^ b));
-        System.out.println("NOT (Compement) : " + (~a));
+//        System.out.println("Bitwise Operator : ");
+//        int a = 5;
+//        int b = 7;
+//        System.out.println("AND : " + (a & b));
+//        System.out.println("OR : " + (a | b));
+//        System.out.println("XOR : " + (a ^ b));
+//        System.out.println("NOT (Compement) : " + (~a));
+
+        System.out.println("Instanceof operator");
+        Object name = "java";
+        System.out.println(name instanceof String);
+        System.out.println(name instanceof  Object);
+        System.out.println(name instanceof Integer);
     }
 }
