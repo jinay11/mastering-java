@@ -79,5 +79,13 @@ public class OperatorsPrc {
         int age = 1;
         String result = (age >= 18) ? "Go to the party " : "you can't go to the party";
         System.out.println(result);
+
+        System.out.println("Bitwise Operator : ");
+        int a = 5;
+        int b = 7;
+        System.out.println("AND : " + (a & b));
+        System.out.println("OR : " + (a | b));
+        System.out.println("XOR : " + (a ^ b));
+        System.out.println("NOT (Compement) : " + (~a));
     }
 }
