@@ -1,4 +1,4 @@
-package basic;
+package arrays;
 
 //first create a class
 class Student {
