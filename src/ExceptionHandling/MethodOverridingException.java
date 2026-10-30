@@ -3,22 +3,32 @@ package ExceptionHandling;
 import java.io.IOException;
 
 class Parent {
+
     void show() {
         System.out.println("This is the parent class");
     }
 
-
+    void display() {
+        try {
+            int sum = 10/0;
+            System.out.println(sum);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 }
 
-class Child {
-    void show() {
+class Child extends Parent {
+
+    void show() throws ArithmeticException {
         try {
             int sum = 10 / 0;
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
+
 }
 
 // rules
@@ -34,5 +44,6 @@ public class MethodOverridingException {
         Child c = new Child();
         c.show();
 
+        c.display();
     }
 }
